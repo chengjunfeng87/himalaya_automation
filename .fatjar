@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Jul 28 14:56:37 CST 2016
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=/home/jerry/backup/workspace/himalaya/testhimalaya.jar
+manifest.mergeall=true
+manifest.mainclass=demo.DemoMain
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=<inc|himalaya/bash>;<inc|himalaya/img>;<inc|himalaya/resource>

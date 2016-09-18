@@ -2,7 +2,8 @@
 <Testcase>
     <SmokeTest>
         <case1 >Abort</case1>
-		<case2>Fast Program</case2>
+	<case2>Fast Program</case2>
+	<case3>ProgramLoop</case3>
     </SmokeTest>
     <MV>
         <Error_Handling>
@@ -55,4 +56,7 @@
 			 </CV_Export_Interface>
 		</CV_Export>
 	</CV>
+	<temp>
+		<case>just a test</case>
+	</temp>
 </Testcase>

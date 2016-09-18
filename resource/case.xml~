@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testcase>
+    <SmokeTest>
+        <case1 >Abort</case1>
+	<case2>Fast Program</case2>
+	<case3>ProgramLoop</case3>
+    </SmokeTest>
+    <MV>
+        <Error_Handling>
+			<Power_Failure>
+				<case1>Scenario 002 003 004</case1>
+				<case2>Scenario 2x2 2x6 success</case2>
+			</Power_Failure>
+			<Safe_Reagent>
+				<case1>Paraffin Safe Reagent Filling with Suck Empty</case1>
+				<case2>Paraffin Safe Reagent Filling with Overflow</case2>
+			</Safe_Reagent>
+		</Error_Handling>
+		<MVS_Master_SW>
+			<MVS_Master_SW_Workflow>
+				<Startup>
+					<case1>Test Screen Saver</case1>
+					<case2>Software Update reboot MSW will follow the reheat strategy</case2>
+				</Startup>
+				<Reagents>
+					<case1>Processing Reagents mode can be Cassette, Cycles, Days and Off</case1>
+					<case2>Cleaning Reagents mode can be Cycles, Days and Off</case2>
+				</Reagents>
+				<Export-Import>
+					<case1>User Export on Error status</case1>
+					<case2>Service Export on Error status</case2>
+				</Export-Import>
+			</MVS_Master_SW_Workflow>
+		</MVS_Master_SW>
+    </MV>  
+	<CV>
+		<CV_GUI>
+			<Functional_requirements>
+				<Startup>
+					<case1>GUI Startup</case1>
+					<case2>Screen Saver</case2>
+				</Startup>
+				<Application_window>
+					<case1>Status bar detail informations</case1>
+					<case2>Status bar's error&amp;warning icon</case2>
+				</Application_window>
+			</Functional_requirements>
+		</CV_GUI>
+		<CV_Export>
+			 <CV_Export_Function>
+				<case1>Check the filename of archived packages</case1>
+				<case2>Export archived packages into destination directory</case2>
+			 </CV_Export_Function>
+			 <CV_Export_Interface>
+				<case1>Open archived file</case1>
+			 </CV_Export_Interface>
+		</CV_Export>
+	</CV>
+</Testcase>
