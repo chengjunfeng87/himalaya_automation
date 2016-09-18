@@ -363,10 +363,12 @@ public class Gui {
 	    	    chapter.setBookmarkOpen(false);
 	    	    Section section;
 				for(String tablename:cases_class){
-					
-					LinkedHashMap<String,String> resultfromdatabase =u.GetTableData(tablename);
 					section = chapter.addSection(new Paragraph(tablename,font2),0);    
-		    	    section.setIndentationLeft(20);  
+		    	    section.setIndentationLeft(20);
+		    	    //tablename should add `` because of tablename contain .
+					tablename="`"+tablename+"`";
+					LinkedHashMap<String,String> resultfromdatabase =u.GetTableData(tablename);
+					
 		    	    
 		    	    for(Iterator resultkey=resultfromdatabase.keySet().iterator();resultkey.hasNext();){
 		    	    	Object key=resultkey.next();

@@ -14,7 +14,10 @@ public class ProgramLoop {
 	public void test(String IP) throws FindFailed, InterruptedException, IOException{
 		//firstly call in each case
 		
-		u.CreateTable("ProgramLoop");
+		//tablename should add `` because of tablename contain .
+		String tablename="`"+getClass().getName()+"`";
+		u.CreateTable(tablename);
+
 		LinkedHashMap<String,String> testresult=new LinkedHashMap<String,String>();
 		IP=IP;
 		String[] reagents={"Formalin"};
@@ -45,7 +48,7 @@ public class ProgramLoop {
 			u.DeletePrograms();
 		
 		testresult.put("end time", u.Current_GUI_Time());
-		u.UpdateData("ProgramLoop", testresult);
+		u.UpdateData(tablename, testresult);
 		
 	}
 	
